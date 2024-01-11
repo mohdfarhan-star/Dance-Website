@@ -1,0 +1,48 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style 
+        include ../static/style.css
+
+block content
+    section#introSection
+        div Welcome to Jackson Dance Academy
+        div.small  Eat Sleep Dance Repeat 
+
+    section#missionSection
+        h1  Our Mission 
+        div.card 
+            h3 Dance perfection 
+            div.card-box
+                div.card-img
+                    img#fk(src="/static/img/img1.png", alt="image not found")
+                div.card-content
+                    p This is the best academy in the world.
+
+        div.card 
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img2.png", alt="image not found")
+                div.card-content
+                    p This is the best academy in the world.
+
+        div.card 
+            h3 Expert teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img3.png", alt="image not found")
+                div.card-content
+                    p This is the best academy in the world.
+
+    section#sponsorsSection
+        h1  Our Sponsors
+        div#sponsors
+            img#fk1.spimage(src="/static/img/logo1.png", alt="image not found")
+            img.spimage(src="/static/img/logo2.png", alt="image not found")
+            img.spimage(src="/static/img/logo3.png", alt="image not found")
+            img.spimage(src="/static/img/logo4.png", alt="image not found")
+

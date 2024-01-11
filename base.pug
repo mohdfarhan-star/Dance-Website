@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Jackson Dance Academy
+    block scripts
+    block style
+    
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo app.png", alt="image not found")
+                | JDA
+            li #[a(href='/') Home] 
+            li #[a(href='/') About us]
+            li #[a(href='/contact') Contact]
+            li #[a(href='/') Class info]
+            li #[a(href='/') Services]
+
+    block content
+    footer#footer 
+            | Copyright © 2021 JacksonDanceAcademy.com | All rights reserved
